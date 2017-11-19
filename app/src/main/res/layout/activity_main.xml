@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carolinacabral.realm.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtDescricao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Lista"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="42dp"
+        android:layout_above="@+id/btnAdicionar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp" />
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="155dp"
+        android:layout_height="51dp"
+        android:text="Adicionar"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="287dp"
+        android:onClick="callProduto"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carolinacabral.realm.AddUpdateProduto">
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="48dp"
+        android:layout_alignBaseline="@+id/editTextDescricao"
+        android:layout_alignBottom="@+id/editTextDescricao"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Button
+        android:id="@+id/buttonAdicionat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:onClick="callAddUpdateProduto"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewNome"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="67dp"
+        android:text="Quantidade:" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Categoria:"
+        android:layout_below="@+id/editTextQuantidade"
+        android:layout_alignLeft="@+id/cbPerecivel"
+        android:layout_alignStart="@+id/cbPerecivel" />
+
+    <EditText
+        android:id="@+id/editTextQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/buttonAdicionat"
+        android:layout_alignStart="@+id/buttonAdicionat" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextQuantidade"
+        android:layout_alignStart="@+id/editTextQuantidade"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextQuantidade"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editTextQuantidade"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/cbPerecivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/spinnerCategoria"
+        android:layout_marginTop="40dp"
+        android:text="Perecível" />
+
+</RelativeLayout>

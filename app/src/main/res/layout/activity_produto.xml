@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carolinacabral.realm.ProdutoActivity">
+
+    <ListView
+        android:id="@+id/listId"
+        android:layout_width="365dp"
+        android:layout_height="377dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_above="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginStart="127dp"
+        android:onClick="callAddProduto"
+        android:text="Adicionar"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:text="Lista" />
+</RelativeLayout>
